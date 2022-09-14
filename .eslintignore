@@ -1,0 +1,9 @@
+node_modules
+.next
+.vercel
+.vscode
+cache
+out
+/tmp
+/public/data
+tsconfig.tsbuildinfo

@@ -1,0 +1,26 @@
+name: Bug report
+description: Create a report about a technical issue on the website.
+title: "[BUG] <description>"
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the bug
+      description: Provide a detailed description of the bug you're encountering
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Add screenshots of the bug (if applicable)
+      description: Add any screenshots where we can see the bug
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional information/context
+      description: Is there anything else we should know about this bug?
+    validations:
+      required: false

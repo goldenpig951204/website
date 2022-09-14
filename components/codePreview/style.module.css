@@ -1,0 +1,124 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.codeBox,
+.codeBoxFullscreen {
+  position: relative;
+}
+
+.code {
+  max-height: 60vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 20px;
+}
+
+:global(.dark) .code {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.codeBoxFullscreen,
+.codeBoxFullscreen .code {
+  height: 100%;
+  max-height: none;
+}
+
+.fab {
+  position: absolute !important;
+  right: 10px;
+  bottom: 10px;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+}
+
+.mobileMenu svg {
+  margin-right: 7px;
+}
+
+.buttonsTop {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttonsBottom {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fullscreen {
+  margin: 0 10px !important;
+}
+
+.tryCode {
+  color: white !important;
+}
+
+.pre {
+  font-size: 13px;
+  margin: 0;
+}
+
+.implementations {
+  margin-top: 10px;
+}
+
+.implementation {
+  margin-right: -5px !important;
+}
+
+.card {
+  display: inline-block;
+  width: 48px;
+  border-radius: 50% !important;
+}
+
+.card:not(.current) {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+.mobileImplementations {
+  width: 100%;
+  margin-top: 15px !important;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+:global(.MuiInputBase-input) .item {
+  margin-left: 5px;
+}
+
+:global(.MuiPopover-paper) .item :global(img) {
+  width: 0.8em;
+  height: 0.8em;
+  transform: translateY(-0.2em);
+}
+
+.item :global(p) {
+  margin-left: 10px !important;
+}
+
+.dialog {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .dialog {
+    margin-top: -8px !important;
+  }
+}

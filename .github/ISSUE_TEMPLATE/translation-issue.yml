@@ -1,0 +1,26 @@
+name: Translation issue
+description: Create a report about a translation issue on the website.
+title: "[TRANSLATION ISSUE] <description>"
+labels: [translations]
+body:
+  - type: input
+    id: description
+    attributes:
+      label: Description of the translation issue
+      description: Provide a detailed description of the issue with any string
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Add screenshots of the translation issue (optional)
+      description: Add any screenshots where we can see the translation issue
+    validations:
+      required: false
+  - type: input
+    id: context
+    attributes:
+      label: Additional information/context
+      description: Is there anything else we should know about this translation issue?
+    validations:
+      required: false
